@@ -1,0 +1,31 @@
+{
+  "name": "eslint-config-leankit",
+  "version": "1.0.0",
+  "description": "ESLint rules for LeanKit",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha spec/*.js",
+    "test-ci": "mocha -w spec/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elijahmanor/eslint-config-leankit.git"
+  },
+  "keywords": [ "lint", "eslint", "leankit" ],
+  "author": "LeanKit",
+  "contributors": [
+    { "name": "Elijah Manor" },
+    { "name": "Bob Yexley" }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elijahmanor/eslint-config-leankit/issues"
+  },
+  "homepage": "https://github.com/elijahmanor/eslint-config-leankit#readme",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "eslint": "^1.10.3",
+    "eslint-plugin-react": "^3.11.3",
+    "mocha": "^2.3.4"
+  }
+}
