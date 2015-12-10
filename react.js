@@ -3,5 +3,7 @@ module.exports = {
 		"eslint-config-leankit/base",
 		"eslint-config-leankit/rules/react"
 	],
-	"rules": {}
+	"rules": {
+		"complexity": [ 2, 10 ]
+	}
 };

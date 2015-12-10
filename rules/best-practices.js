@@ -4,7 +4,7 @@ module.exports = {
 	"rules": {
 		"accessor-pairs": [ 2, { "setWithoutGet": true } ], // enforces getter/setter pairs in objects
 		"block-scoped-var": 2, // JSHINT treat var statements as if they were block scoped
-		"complexity": [ 2, 50 ], // specify the maximum cyclomatic complexity allowed in a program
+		"complexity": [ 2, 5 ], // specify the maximum cyclomatic complexity allowed in a program
 		"consistent-return": 2, // require return statements to either always or never specify values
 		"curly": [ 2, "all" ], // JSCS specify curly brace conventions for all control statements
 		"default-case": 2, // require default case in switch statements

@@ -1,11 +1,9 @@
 {
   "name": "eslint-config-leankit",
   "version": "1.0.0",
-  "description": "<!-- [![Build Status](https://travis-ci.org/leankit/eslint-config-leankit.svg?branch=master)](https://travis-ci.org/leankit/eslint-config-leankit) -->",
+  "description": "ESLint rules for LeanKit",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint --cache '**/*.js'",
-    "lint-ci": "onchange '**/*.js' -- npm run eslint",
     "test": "mocha spec/*.js",
     "test-ci": "mocha -w spec/*.js"
   },
@@ -13,9 +11,13 @@
     "type": "git",
     "url": "git+https://github.com/elijahmanor/eslint-config-leankit.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [ "lint", "eslint", "leankit" ],
+  "author": "LeanKit",
+  "contributors": [
+    { "name": "Elijah Manor" },
+    { "name": "Bob Yexley" }
+  ],
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/elijahmanor/eslint-config-leankit/issues"
   },
@@ -24,7 +26,6 @@
     "chai": "^3.4.1",
     "eslint": "^1.10.3",
     "eslint-plugin-react": "^3.11.3",
-    "mocha": "^2.3.4",
-    "polyjuice": "^1.1.4"
+    "mocha": "^2.3.4"
   }
 }
