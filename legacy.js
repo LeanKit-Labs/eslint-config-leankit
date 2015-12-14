@@ -13,5 +13,7 @@ module.exports = {
 	},
 	"ecmaFeatures": {},
 	"globals": {},
-	"rules": {}
+	"rules": {
+		"vars-on-top": 0
+	}
 };

@@ -4,7 +4,7 @@ module.exports = {
 	"rules": {
 		"accessor-pairs": [ 2, { "setWithoutGet": true } ], // enforces getter/setter pairs in objects
 		"block-scoped-var": 2, // JSHINT treat var statements as if they were block scoped
-		"complexity": [ 2, 5 ], // specify the maximum cyclomatic complexity allowed in a program
+		"complexity": [ 0, 5 ], // TRIAL specify the maximum cyclomatic complexity allowed in a program
 		"consistent-return": 2, // require return statements to either always or never specify values
 		"curly": [ 2, "all" ], // JSCS specify curly brace conventions for all control statements
 		"default-case": 2, // require default case in switch statements
@@ -41,8 +41,8 @@ module.exports = {
 		"no-new": 2, // JSHINT disallow use of the new operator when not part of an assignment or comparison
 		"no-octal-escape": 2, // disallow use of octal escape sequences in string literals, such as var foo = "Copyright \251";
 		"no-octal": 2, // disallow use of octal literals
-		"no-param-reassign": [ 1, { "props": false } ], // disallow reassignment of function parameters
-		"no-process-env": 1, // disallow use of process.env
+		"no-param-reassign": [ 0, { "props": false } ], // TRIAL disallow reassignment of function parameters
+		"no-process-env": 0, // disallow use of process.env
 		"no-proto": 2, // JSHINT disallow usage of __proto__ property
 		"no-redeclare": 2, // disallow declaring the same variable more than once
 		"no-return-assign": 2, // disallow use of assignment in return statement

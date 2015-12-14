@@ -19,6 +19,8 @@ module.exports = {
 		"no-unused-expressions": 0,
 		"no-magic-numbers": 0,
 		"react/prop-types": 0,
-		"react/display-name": 0
+		"react/display-name": 0,
+		"react/no-multi-comp": 0,
+		"init-declarations": 0
 	}
 };
