@@ -44,6 +44,8 @@ module.exports = {
 				"lifecycle": [
 					"displayName",
 					"mixins",
+					"stores",
+					"getActions",
 					"propTypes",
 					"contextTypes",
 					"childContextTypes",

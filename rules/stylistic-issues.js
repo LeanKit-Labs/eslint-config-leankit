@@ -27,7 +27,7 @@ module.exports = {
 		"max-statements": [ 2, 25 ], // specify the maximum number of statement allowed in a function
 		"new-cap": 2, // JSCS require a capital letter for constructors
 		"new-parens": 2, // disallow the omission of parentheses when invoking a constructor with no arguments
-		"newline-after-var": [ 1, "always" ], // require or disallow an empty newline after variable declarations
+		"newline-after-var": [ 2, "always" ], // require or disallow an empty newline after variable declarations
 		"no-array-constructor": 2, // disallow use of the Array constructor
 		"no-bitwise": 0, // JSHINT disallow use of bitwise operators
 		"no-continue": 2, // disallow use of the continue statement
@@ -47,10 +47,10 @@ module.exports = {
 		"no-unneeded-ternary": 2, // disallow the use of ternary operators when a simpler alternative exists
 		"object-curly-spacing": [ 2, "always" ], // require or disallow padding inside curly braces (fixable)
 		"one-var": [ 2, { "initialized": "never", "uninitialized": "always" } ], // JSCS require or disallow one variable declaration per function
-		"operator-assignment": [ 1, "always" ], // require assignment operator shorthand where possible or prohibit it entirely
+		"operator-assignment": [ 2, "always" ], // require assignment operator shorthand where possible or prohibit it entirely
 		"operator-linebreak": [ 2, "after", { "overrides": { "?": "after", ":": "after" } } ], // JSCS enforce operators to be placed before or after line breaks
 		"padded-blocks": [ 2, "never" ], // JSCS enforce padding within blocks
-		"quote-props": [ 2, "as-needed", { "keywords": true } ], // JSCS require quotes around object literal property names
+		"quote-props": [ 2, "as-needed", { "keywords": false } ], // JSCS require quotes around object literal property names
 		"quotes": [ 2, "double", "avoid-escape" ], // JSCS specify whether backticks, double or single quotes should be used (fixable)
 		"require-jsdoc": [ 0 ], // Require JSDoc comment
 		"semi-spacing": [ 2, { "before": false, "after": true } ], // enforce spacing before and after semicolons
