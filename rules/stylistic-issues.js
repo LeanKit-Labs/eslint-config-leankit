@@ -35,7 +35,7 @@ module.exports = {
 		"no-lonely-if": 2, // disallow if as the only statement in an else block
 		"no-mixed-spaces-and-tabs": 2, // JSCS disallow mixed spaces and tabs for indentation
 		"no-multiple-empty-lines": [ 2, { max: 2 } ], // JSCS disallow multiple empty lines
-		"no-negated-condition": 2, // disallow negated conditions
+		"no-negated-condition": 0, // TRIAL disallow negated conditions
 		"no-nested-ternary": 2, // disallow nested ternary expressions
 		"no-new-object": 2, // disallow the use of the Object constructor
 		"no-plusplus": 0, // JSHINT disallow use of unary operators, ++ and --

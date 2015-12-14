@@ -8,7 +8,7 @@ module.exports = {
 		"react/jsx-boolean-value": [ 1, "always" ], // Enforce boolean attributes notation in JSX
 		"react/jsx-closing-bracket-location": [ 1, { "location": "after-props" } ], // Validate closing bracket location in JSX
 		"react/jsx-curly-spacing": [ 2, "always" ], // Enforce or disallow spaces inside of curly braces in JSX attributes
-		"react/jsx-handler-names": [ 1, { "eventHandlerPrefix": "handle", "eventHandlerPropPrefix": "on" } ], // Enforce event handler naming conventions in JSX
+		"react/jsx-handler-names": [ 0, { "eventHandlerPrefix": "handle", "eventHandlerPropPrefix": "on" } ], // Enforce event handler naming conventions in JSX
 		"react/jsx-indent-props": [ 2, "tab" ], // Validate props indentation in JSX
 		"react/jsx-key": [ 2, 2 ], // Validate JSX has key prop when in array or iterator
 		"react/jsx-max-props-per-line": [ 2, { "maximum": 10 } ], // Limit maximum of props on a single line in JSX

@@ -31,7 +31,7 @@ module.exports = {
 		"experimentalObjectRestSpread": true // enable support for the experimental object rest/spread properties
 	},
 	"rules": {
-		"arrow-body-style": [ 1, "as-needed" ], // require braces in arrow function body
+		"arrow-body-style": [ 0, "as-needed" ], // TRIAL require braces in arrow function body
 		"arrow-parens": [ 2, "as-needed" ], // require parens in arrow function arguments
 		"arrow-spacing": [ 2, { "before": true, "after": true } ], // require space before/after arrow function's arrow (fixable)
 		"constructor-super": 2, // verify calls of super() in constructors
