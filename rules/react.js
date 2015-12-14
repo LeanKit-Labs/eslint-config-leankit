@@ -46,6 +46,7 @@ module.exports = {
 			"groups": {
 				"lux": [
 					"stores",
+					"getActionGroup",
 					"getActions"
 				],
 				"props": [
