@@ -11,7 +11,7 @@ module.exports = {
 		"no-undef-init": 2, // disallow use of undefined when initializing variables
 		"no-undef": 2, // JSHINT disallow use of undeclared variables unless mentioned in a /*global */ block
 		"no-undefined": 0, // disallow use of undefined variable
-		"no-unused-vars": [ 2, { "vars": "all", "args": "after-used" } ], // JSHINT disallow declaration of variables that are not used in the code
+		"no-unused-vars": [ 2, { "vars": "all", "args": "none" } ], // JSHINT disallow declaration of variables that are not used in the code
 		"no-use-before-define": [ 2, "nofunc" ] // JSHINT disallow use of variables before they are defined
 	}
 };

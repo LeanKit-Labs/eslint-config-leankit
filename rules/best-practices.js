@@ -41,8 +41,8 @@ module.exports = {
 		"no-new": 2, // JSHINT disallow use of the new operator when not part of an assignment or comparison
 		"no-octal-escape": 2, // disallow use of octal escape sequences in string literals, such as var foo = "Copyright \251";
 		"no-octal": 2, // disallow use of octal literals
-		"no-process-env": 1, // disallow use of process.env
 		"no-param-reassign": [ 0, { "props": false } ], // TRIAL disallow reassignment of function parameters
+		"no-process-env": 0, // disallow use of process.env
 		"no-proto": 2, // JSHINT disallow usage of __proto__ property
 		"no-redeclare": 2, // disallow declaring the same variable more than once
 		"no-return-assign": 2, // disallow use of assignment in return statement

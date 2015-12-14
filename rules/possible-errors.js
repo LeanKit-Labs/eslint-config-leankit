@@ -4,7 +4,7 @@ module.exports = {
 	"rules": {
 		"comma-dangle": [ 2, "never" ], // JSCS disallow or enforce trailing commas
 		"no-cond-assign": [ 2, "always" ], // JSHINT disallow assignment in conditional expressions
-		"no-console": 2, // disallow use of console in the node environment
+		"no-console": 1, // disallow use of console in the node environment
 		"no-constant-condition": 2, // disallow use of constant expressions in conditions
 		"no-control-regex": 2, // disallow control characters in regular expressions
 		"no-debugger": 2, // JSHINT disallow use of debugger
