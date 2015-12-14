@@ -8,13 +8,13 @@ module.exports = {
 		"react/jsx-boolean-value": [ 1, "always" ], // Enforce boolean attributes notation in JSX
 		"react/jsx-closing-bracket-location": [ 1, { "location": "after-props" } ], // Validate closing bracket location in JSX
 		"react/jsx-curly-spacing": [ 2, "always" ], // Enforce or disallow spaces inside of curly braces in JSX attributes
-		"react/jsx-handler-names": [ 0, { "eventHandlerPrefix": "handle", "eventHandlerPropPrefix": "on" } ], // Enforce event handler naming conventions in JSX
+		"react/jsx-handler-names": [ 0, { "eventHandlerPrefix": "handle", "eventHandlerPropPrefix": "on" } ], // TRIAL Enforce event handler naming conventions in JSX
 		"react/jsx-indent-props": [ 2, "tab" ], // Validate props indentation in JSX
 		"react/jsx-key": [ 2, 2 ], // Validate JSX has key prop when in array or iterator
 		"react/jsx-max-props-per-line": [ 2, { "maximum": 10 } ], // Limit maximum of props on a single line in JSX
 		"react/jsx-no-bind": [ 0 ], // Prevent usage of .bind() and arrow functions in JSX props
 		"react/jsx-no-duplicate-props": [ 2, { "ignoreCase": false } ], // Prevent duplicate props in JSX
-		"react/jsx-no-literals": 1, // Prevent usage of unwrapped JSX strings
+		"react/jsx-no-literals": 0, // Prevent usage of unwrapped JSX strings
 		"react/jsx-no-undef": 2, // Disallow undeclared variables in JSX
 		"react/jsx-pascal-case": 0, // Enforce PascalCase for user-defined JSX components
 		"react/jsx-quotes": [ 2, "double", "avoid-escape" ], // Enforce quote style for JSX attributes
@@ -36,32 +36,24 @@ module.exports = {
 		"react/self-closing-comp": 2, // Prevent extra closing tags for components without children
 		"react/sort-comp": [ 1, {
 			"order": [
-				"lifecycle",
+				"mixins",
+				"lux",
+				"props",
+				"state",
 				"everything-else",
 				"render"
 			],
 			"groups": {
-				"lifecycle": [
-					"displayName",
-					"mixins",
+				"lux": [
 					"stores",
-					"getActions",
+					"getActions"
+				],
+				"props": [
 					"propTypes",
-					"contextTypes",
-					"childContextTypes",
-					"statics",
-					"defaultProps",
-					"constructor",
 					"getDefaultProps",
-					"getInitialState",
-					"getChildContext",
-					"componentWillMount",
-					"componentDidMount",
-					"componentWillReceiveProps",
-					"shouldComponentUpdate",
-					"componentWillUpdate",
-					"componentDidUpdate",
-					"componentWillUnmount"
+				],
+				"state": [
+					"getInitialState"
 				]
 			}
 		} ], // Enforce component methods order
