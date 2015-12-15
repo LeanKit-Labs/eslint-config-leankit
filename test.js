@@ -1,9 +1,10 @@
 module.exports = {
-	"extends": "eslint-config-leankit/base",
 	"env": {
-		"browser": true,
-		"node": true,
+		"es6": true,
 		"mocha": true
+	},
+	"ecmaFeatures": {
+		"modules": true, // enable modules and global strict mode
 	},
 	"globals": {
 		"before": true,

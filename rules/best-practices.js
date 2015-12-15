@@ -57,7 +57,7 @@ module.exports = {
 		"no-warning-comments": [ 0, { "terms": [ "todo", "fixme", "xxx" ], "location": "start" } ], // disallow usage of configurable warning terms in comments - e.g. TODO or FIXME
 		"no-with": 2, // JSCS disallow use of the with statement
 		"radix": 2, // require use of the second argument for parseInt()
-		"vars-on-top": 2, // require declaration of all vars at the top of their containing scope
+		"vars-on-top": 0, // require declaration of all vars at the top of their containing scope
 		"wrap-iife": 2, // JSCS require immediate function invocation to be wrapped in parentheses
 		"yoda": 2 // require or disallow Yoda conditions
 	}
