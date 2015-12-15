@@ -1,13 +1,15 @@
 const rules = require( "../react" );
 
 describe( "React", function() {
-	describe( "Rules", function() {
-		it( "should extend base rules", function() {
-			rules.extends.should.contain( "eslint-config-leankit/base" );
-		} );
-
+	describe( "Extends", function() {
 		it( "should extend react rules", function() {
 			rules.extends.should.contain( "eslint-config-leankit/rules/react" );
+		} );
+	} );
+
+	describe( "Rules", function() {
+		it( "should override complexity", function() {
+			rules.rules.complexity.should.eql( [ 0, 10 ] );
 		} );
 	} );
 } );
