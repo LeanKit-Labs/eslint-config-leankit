@@ -2,6 +2,9 @@
   "name": "eslint-config-leankit",
   "version": "1.0.0",
   "description": "ESLint rules for LeanKit",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "main": "index.js",
   "scripts": {
     "test": "mocha spec/*.js",
