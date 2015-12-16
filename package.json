@@ -8,7 +8,8 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha spec/*.js",
-    "test-ci": "mocha -w spec/*.js"
+    "test-ci": "mocha -w spec/*.js",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",

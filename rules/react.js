@@ -51,7 +51,7 @@ module.exports = {
 				],
 				"props": [
 					"propTypes",
-					"getDefaultProps",
+					"getDefaultProps"
 				],
 				"state": [
 					"getInitialState"
