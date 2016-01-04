@@ -1,6 +1,6 @@
-## 1.0.x
+## 1.x
 
-### Next
+### 1.1.0
 
 * Minor Tweaks to `eslint-config-leankit` based on lessons learned when integrating the rules into `nonstop-index-ui`
 * Turned off the following rules: `react/jsx-handler-names`, `no-extra-parens`, `react/jsx-boolean-value`, `no-eq-null`, `newline-after-var`
