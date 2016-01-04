@@ -19,7 +19,7 @@ module.exports = {
 		"no-else-return": 2, // disallow else after a return in an if
 		"no-empty-label": 2, // disallow use of labels for anything other than loops and switches
 		"no-empty-pattern": 2, // disallow use of empty destructuring patterns
-		"no-eq-null": 1, // JSHINT disallow comparisons to null without a type-checking operator
+		"no-eq-null": 0, // JSHINT disallow comparisons to null without a type-checking operator
 		"no-eval": 2, // JSHINT disallow use of eval()
 		"no-extend-native": 2, // disallow adding to native types
 		"no-extra-bind": 2, // disallow unnecessary function binding
@@ -41,7 +41,7 @@ module.exports = {
 		"no-new": 2, // JSHINT disallow use of the new operator when not part of an assignment or comparison
 		"no-octal-escape": 2, // disallow use of octal escape sequences in string literals, such as var foo = "Copyright \251";
 		"no-octal": 2, // disallow use of octal literals
-		"no-param-reassign": [ 0, { "props": false } ], // TRIAL disallow reassignment of function parameters
+		"no-param-reassign": [ 0, { "props": false } ], // disallow reassignment of function parameters
 		"no-process-env": 0, // disallow use of process.env
 		"no-proto": 2, // JSHINT disallow usage of __proto__ property
 		"no-redeclare": 2, // disallow declaring the same variable more than once

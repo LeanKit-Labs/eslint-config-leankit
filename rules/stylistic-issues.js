@@ -27,7 +27,7 @@ module.exports = {
 		"max-statements": [ 2, 25 ], // specify the maximum number of statement allowed in a function
 		"new-cap": 2, // JSCS require a capital letter for constructors
 		"new-parens": 2, // disallow the omission of parentheses when invoking a constructor with no arguments
-		"newline-after-var": [ 2, "always" ], // require or disallow an empty newline after variable declarations
+		"newline-after-var": [ 0, "always" ], // require or disallow an empty newline after variable declarations
 		"no-array-constructor": 2, // disallow use of the Array constructor
 		"no-bitwise": 0, // JSHINT disallow use of bitwise operators
 		"no-continue": 2, // disallow use of the continue statement

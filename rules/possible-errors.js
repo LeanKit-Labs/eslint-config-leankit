@@ -4,7 +4,7 @@ module.exports = {
 	"rules": {
 		"comma-dangle": [ 2, "never" ], // JSCS disallow or enforce trailing commas
 		"no-cond-assign": [ 2, "always" ], // JSHINT disallow assignment in conditional expressions
-		"no-console": 1, // disallow use of console in the node environment
+		"no-console": 2, // disallow use of console in the node environment
 		"no-constant-condition": 2, // disallow use of constant expressions in conditions
 		"no-control-regex": 2, // disallow control characters in regular expressions
 		"no-debugger": 2, // JSHINT disallow use of debugger
@@ -15,7 +15,7 @@ module.exports = {
 		"no-empty": 2, // JSHINT disallow empty statements
 		"no-ex-assign": 2, // disallow assigning to the exception in a catch block
 		"no-extra-boolean-cast": 2, // disallow double-negation boolean casts in a boolean context
-		"no-extra-parens": 1, // disallow unnecessary parentheses
+		"no-extra-parens": 0, // TRIAL disallow unnecessary parentheses
 		"no-extra-semi": 2, // disallow unnecessary semicolons (fixable)
 		"no-func-assign": 2, // disallow overwriting functions written as function declarations
 		"no-inner-declarations": 2, // disallow function or variable declarations in nested blocks
