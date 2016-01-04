@@ -19,7 +19,7 @@ module.exports = {
 		"no-else-return": 2, // disallow else after a return in an if
 		"no-empty-label": 2, // disallow use of labels for anything other than loops and switches
 		"no-empty-pattern": 2, // disallow use of empty destructuring patterns
-		"no-eq-null": 1, // JSHINT disallow comparisons to null without a type-checking operator
+		"no-eq-null": 0, // JSHINT disallow comparisons to null without a type-checking operator
 		"no-eval": 2, // JSHINT disallow use of eval()
 		"no-extend-native": 2, // disallow adding to native types
 		"no-extra-bind": 2, // disallow unnecessary function binding

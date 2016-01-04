@@ -5,10 +5,10 @@ module.exports = {
 	"rules": {
 		"react/display-name": [ 2, { "acceptTranspilerName": true } ], // Prevent missing displayName in a React component definition
 		"react/forbid-prop-types": [ 2, { "forbid": [ "any" ] } ], // Forbid certain propTypes
-		"react/jsx-boolean-value": [ 1, "always" ], // Enforce boolean attributes notation in JSX
+		"react/jsx-boolean-value": [ 0, "always" ], // Enforce boolean attributes notation in JSX
 		"react/jsx-closing-bracket-location": [ 1, { "location": "after-props" } ], // Validate closing bracket location in JSX
 		"react/jsx-curly-spacing": [ 2, "always" ], // Enforce or disallow spaces inside of curly braces in JSX attributes
-		"react/jsx-handler-names": [ 0, { "eventHandlerPrefix": "handle", "eventHandlerPropPrefix": "on" } ], // TRIAL Enforce event handler naming conventions in JSX
+		"react/jsx-handler-names": [ 0, { "eventHandlerPrefix": "handle", "eventHandlerPropPrefix": "on" } ], // Enforce event handler naming conventions in JSX
 		"react/jsx-indent-props": [ 2, "tab" ], // Validate props indentation in JSX
 		"react/jsx-key": [ 2, 2 ], // Validate JSX has key prop when in array or iterator
 		"react/jsx-max-props-per-line": [ 2, { "maximum": 10 } ], // Limit maximum of props on a single line in JSX
@@ -17,7 +17,6 @@ module.exports = {
 		"react/jsx-no-literals": 0, // Prevent usage of unwrapped JSX strings
 		"react/jsx-no-undef": 2, // Disallow undeclared variables in JSX
 		"react/jsx-pascal-case": 0, // Enforce PascalCase for user-defined JSX components
-		"react/jsx-quotes": [ 2, "double", "avoid-escape" ], // Enforce quote style for JSX attributes
 		"react/jsx-sort-prop-types": 0, // Enforce propTypes declarations alphabetical sorting
 		"react/jsx-sort-props": 0, // Enforce props alphabetical sorting
 		"react/jsx-uses-react": 2, // Prevent React to be incorrectly marked as unused
@@ -34,7 +33,7 @@ module.exports = {
 		"react/react-in-jsx-scope": 2, // Prevent missing React when using JSX
 		"react/require-extension": 2, // Restrict file extensions that may be required
 		"react/self-closing-comp": 2, // Prevent extra closing tags for components without children
-		"react/sort-comp": [ 1, {
+		"react/sort-comp": [ 2, {
 			"order": [
 				"mixins",
 				"lux",
@@ -45,9 +44,9 @@ module.exports = {
 			],
 			"groups": {
 				"lux": [
-					"stores",
 					"getActionGroup",
-					"getActions"
+					"getActions",
+					"stores"
 				],
 				"props": [
 					"propTypes",
