@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-leankit",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "ESLint rules for LeanKit",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
@@ -15,12 +15,22 @@
     "type": "git",
     "url": "git+https://github.com/LeanKit-Labs/eslint-config-leankit.git"
   },
-  "keywords": [ "lint", "eslint", "leankit" ],
+  "keywords": [
+    "lint",
+    "eslint",
+    "leankit"
+  ],
   "author": "LeanKit",
   "contributors": [
-    { "name": "Elijah Manor" },
-    { "name": "Bob Yexley" },
-    { "name": "JD Courtoy" }
+    {
+      "name": "Elijah Manor"
+    },
+    {
+      "name": "Bob Yexley"
+    },
+    {
+      "name": "JD Courtoy"
+    }
   ],
   "license": "MIT",
   "bugs": {
