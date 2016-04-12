@@ -17,7 +17,6 @@ module.exports = {
 		"no-case-declarations": 2, // disallow lexical declarations in case clauses
 		"no-div-regex": 2, // disallow division operators explicitly at beginning of regular expression
 		"no-else-return": 2, // disallow else after a return in an if
-		"no-empty-label": 2, // disallow use of labels for anything other than loops and switches
 		"no-empty-pattern": 2, // disallow use of empty destructuring patterns
 		"no-eq-null": 0, // JSHINT disallow comparisons to null without a type-checking operator
 		"no-eval": 2, // JSHINT disallow use of eval()
@@ -32,7 +31,9 @@ module.exports = {
 		"no-labels": 2, // disallow use of labeled statements
 		"no-lone-blocks": 2, // disallow unnecessary nested blocks
 		"no-loop-func": 2, // JSHINT disallow creation of functions within loops
-		"no-magic-numbers": 2, // disallow the use of magic numbers
+		"no-magic-numbers": [ "error", {
+			"ignore": [ -1, 0, 1 ] // disallow the use of magic numbers except common incrementers / indexes
+		} ],
 		"no-multi-spaces": 2, // JSCS disallow use of multiple spaces (fixable)
 		"no-multi-str": 2, // JSCS disallow use of multiline strings
 		"no-native-reassign": 2, // disallow reassignments of native objects
