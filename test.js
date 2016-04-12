@@ -4,7 +4,7 @@ module.exports = {
 		"mocha": true
 	},
 	"ecmaFeatures": {
-		"modules": true, // enable modules and global strict mode
+		"modules": true // enable modules and global strict mode
 	},
 	"globals": {
 		"before": true,

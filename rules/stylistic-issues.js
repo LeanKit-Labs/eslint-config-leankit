@@ -18,6 +18,15 @@ module.exports = {
 		"indent": [ 2, "tab", { "SwitchCase": 1 } ], // JSCS specify tab or space width for your code (fixable)
 		"jsx-quotes": [ 2, "prefer-double" ], // specify whether double or single quotes should be used in JSX attributes
 		"key-spacing": [ 2, { "beforeColon": false, "afterColon": true } ], // JSCS enforce spacing between keys and values in object literal properties
+		"keyword-spacing": [ 2, {
+			"before": true, // require a space before certain keywords (fixable)
+			"after": true, // JSCS require a space after certain keywords (fixable)
+			"overrides": { // JSCS require a space after return, throw, and case (fixable)
+				"return": { "after": true },
+				"throw": { "after": true },
+				"case": { "after": true }
+			}
+		} ], //
 		"linebreak-style": [ 2, "unix" ], // JSCS disallow mixed 'LF' and 'CRLF' as linebreaks
 		"lines-around-comment": 0, // JSCS enforce empty lines around comments
 		"max-depth": [ 2, 5 ], // specify the maximum depth that blocks can be nested
@@ -56,13 +65,10 @@ module.exports = {
 		"semi-spacing": [ 2, { "before": false, "after": true } ], // enforce spacing before and after semicolons
 		"semi": [ 2, "always" ], // JSCS require or disallow use of semicolons instead of ASI (fixable)
 		"sort-vars": 0, // sort variables within the same declaration block
-		"space-after-keywords": [ 2, "always" ], // JSCS require a space after certain keywords (fixable)
 		"space-before-blocks": [ 2, "always" ], // JSCS require or disallow a space before blocks (fixable)
 		"space-before-function-paren": [ 2, "never" ], // JSCS require or disallow a space before function opening parenthesis (fixable)
-		"space-before-keywords": [ 2, "always" ], // require a space before certain keywords (fixable)
 		"space-in-parens": [ 2, "always" ], // JSCS require or disallow spaces inside parentheses
 		"space-infix-ops": 2, // JSCS require spaces around operators (fixable)
-		"space-return-throw-case": 2, // JSCS require a space after return, throw, and case (fixable)
 		"space-unary-ops": 2, // JSCS require or disallow spaces before/after unary operators (fixable)
 		"spaced-comment": [ 2, "always" ], // require or disallow a space immediately following the // or /* in a comment
 		"wrap-regex": 0 // require regex literals to be wrapped in parentheses
