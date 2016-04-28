@@ -1,19 +1,6 @@
 module.exports = {
 	"env": {
-		"es6": true,
 		"mocha": true
-	},
-	"ecmaFeatures": {
-		"modules": true // enable modules and global strict mode
-	},
-	"globals": {
-		"before": true,
-		"beforeEach": true,
-		"describe": true,
-		"global": true,
-		"it": true,
-		"sinon": true,
-		"should": true
 	},
 	"rules": {
 		"max-nested-callbacks": [ 2, 15 ],
