@@ -1,4 +1,4 @@
-const should = require( "chai" ).should();
+const should = require( "chai" ).should(); // eslint-disable-line no-unused-vars
 const rules = require( "../test" );
 const IGNORED_RULES = [ "no-unused-expressions", "no-magic-numbers", "react/prop-types", "react/display-name", "react/no-multi-comp", "init-declarations" ];
 

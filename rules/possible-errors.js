@@ -2,7 +2,6 @@
 
 module.exports = {
 	"rules": {
-		"comma-dangle": [ 2, "never" ], // JSCS disallow or enforce trailing commas
 		"no-cond-assign": [ 2, "always" ], // JSHINT disallow assignment in conditional expressions
 		"no-console": 1, // disallow use of console in the node environment
 		"no-constant-condition": 2, // disallow use of constant expressions in conditions
@@ -23,10 +22,13 @@ module.exports = {
 		"no-irregular-whitespace": 2, // disallow irregular whitespace outside of strings and comments
 		"no-negated-in-lhs": 2, // disallow negation of the left operand of an in expression
 		"no-obj-calls": 2, // disallow the use of object properties of the global object (Math and JSON) as functions
+		"no-prototype-builtins": 0, // disallow calling some Object.prototype methods directly on objects
 		"no-regex-spaces": 2, // disallow multiple spaces in a regular expression literal
 		"no-sparse-arrays": 2, //  disallow sparse arrays
+		"no-template-curly-in-string": 2, // disallow template literal placeholder syntax in regular strings
 		"no-unexpected-multiline": 2, //  Avoid code that looks like two expressions but is actually one
 		"no-unreachable": 2, // disallow unreachable statements after a return, throw, continue, or break statement
+		"no-unsafe-finally": 0, // disallow control flow statements in finally blocks
 		"use-isnan": 2, // disallow comparisons with the value NaN
 		"valid-jsdoc": 2, // Ensure JSDoc comments are valid
 		"valid-typeof": 2 // Ensure that the results of typeof are compared against a valid string

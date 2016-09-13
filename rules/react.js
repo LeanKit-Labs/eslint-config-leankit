@@ -22,7 +22,7 @@ module.exports = {
 		"react/jsx-uses-react": 2, // Prevent React to be incorrectly marked as unused
 		"react/jsx-uses-vars": 2, // Prevent variables used in JSX to be incorrectly marked as unused
 		"react/no-danger": 2, // Prevent usage of dangerous JSX properties
-		"react/no-did-mount-set-state": [ 2, "allow-in-func" ], // Prevent usage of setState in componentDidMount
+		"react/no-did-mount-set-state": 2, // Prevent usage of setState in componentDidMount
 		"react/no-did-update-set-state": 2, // Prevent usage of setState in componentDidUpdate
 		"react/no-direct-mutation-state": 2, // Prevent direct mutation of this.state
 		"react/no-multi-comp": [ 2, { "ignoreStateless": true } ], // Prevent multiple component definition per file

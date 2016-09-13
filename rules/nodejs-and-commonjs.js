@@ -8,8 +8,10 @@ module.exports = {
 		"no-mixed-requires": [ 2, { "grouping": true } ], //  enforce error handling in callbacks
 		"no-new-require": 2, //  disallow mixing regular variable and require declarations
 		"no-path-concat": 2, // disallow string concatenation with __dirname and __filename
+		"no-process-env": 0, // disallow use of process.env
 		"no-process-exit": 2, // disallow process.exit()
 		"no-restricted-modules": 0, // restrict usage of specified node modules
+		"no-restricted-properties": 0, // disallow certain properties on certain objects
 		"no-sync": 0 //  disallow use of synchronous methods
 	}
 };
