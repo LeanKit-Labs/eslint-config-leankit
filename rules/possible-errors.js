@@ -29,6 +29,7 @@ module.exports = {
 		"no-unexpected-multiline": 2, //  Avoid code that looks like two expressions but is actually one
 		"no-unreachable": 2, // disallow unreachable statements after a return, throw, continue, or break statement
 		"no-unsafe-finally": 0, // disallow control flow statements in finally blocks
+		"no-unsafe-negation": 0, // disallow negating the left operand of relational operators
 		"use-isnan": 2, // disallow comparisons with the value NaN
 		"valid-jsdoc": 2, // Ensure JSDoc comments are valid
 		"valid-typeof": 2 // Ensure that the results of typeof are compared against a valid string

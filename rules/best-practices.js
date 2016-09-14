@@ -19,6 +19,7 @@ module.exports = {
 		"no-case-declarations": 2, // disallow lexical declarations in case clauses
 		"no-div-regex": 2, // disallow division operators explicitly at beginning of regular expression
 		"no-else-return": 2, // disallow else after a return in an if
+		"no-empty-function": 0, // disallow empty functions
 		"no-empty-pattern": 2, // disallow use of empty destructuring patterns
 		"no-eq-null": 0, // JSHINT disallow comparisons to null without a type-checking operator
 		"no-eval": 2, // JSHINT disallow use of eval()
@@ -41,7 +42,6 @@ module.exports = {
 		} ],
 		"no-multi-spaces": 2, // JSCS disallow use of multiple spaces (fixable)
 		"no-multi-str": 2, // JSCS disallow use of multiline strings
-		// "no-native-reassign": 2, // disallow reassignments of native objects
 		"no-new-func": 2, // JSHINT disallow use of new operator for Function object
 		"no-new-wrappers": 2, // JSHINT disallows creating new instances of String,Number, and Boolean
 		"no-new": 2, // JSHINT disallow use of the new operator when not part of an assignment or comparison

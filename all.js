@@ -1,13 +1,14 @@
 module.exports = {
 	"extends": [
-		"eslint-config-leankit/rules/best-practices",
-		"eslint-config-leankit/rules/possible-errors",
-		"eslint-config-leankit/rules/nodejs-and-commonjs",
-		"eslint-config-leankit/rules/strict-mode",
-		"eslint-config-leankit/rules/stylistic-issues",
-		"eslint-config-leankit/rules/variables",
-		"eslint-config-leankit/rules/ecmascript6"
-		// "eslint-config-leankit/rules/react"
+		"./rules/best-practices.js",
+		"./rules/possible-errors.js",
+		"./rules/nodejs-and-commonjs.js",
+		"./rules/strict-mode.js",
+		"./rules/stylistic-issues.js",
+		"./rules/variables.js",
+		"./rules/ecmascript6.js",
+		"./rules/react.js",
+		"./rules/a11y.js"
 	],
 	"env": {
 		"browser": true,

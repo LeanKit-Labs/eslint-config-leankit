@@ -4,6 +4,7 @@ module.exports = {
 	},
 	"rules": {
 		"max-nested-callbacks": [ 2, 15 ],
+		"max-lines": 0,
 		"no-unused-expressions": 0,
 		"no-magic-numbers": 0,
 		"react/prop-types": 0,
