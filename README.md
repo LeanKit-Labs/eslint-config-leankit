@@ -29,6 +29,13 @@ These rules are specific to React development. It requires `eslint` and `eslint-
 1. `npm install eslint eslint-plugin-react eslint-config-leankit --save-dev`
 2. add `"extends": "leankit/react"` to your `.eslintrc` or you can choose to merge the base and react rules `"extends": [ "leankit", "leankit/react" ]`
 
+### eslint-config-leankit/a11y
+
+If you are using React and you'd like some Accessibility rules, then `a11y` is for you. It requires `eslint` and `eslint-plugin-jsx-a11y`.
+
+1. `npm install eslint eslint-plugin-jsx-a11y eslint-config-leankit --save-dev`
+2. add `"extends": "leankit/a11y"` to your `.eslintrc` or you can choose to merge the base and react rules `"extends": [ "leankit", "leankit/a11y" ]`
+
 ### eslint-config-leankit/test
 
 This some rules for writing tests using [`mocha`](https://mochajs.org/).
