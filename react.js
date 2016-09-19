@@ -1,6 +1,6 @@
 module.exports = {
 	"extends": [
-		"eslint-config-leankit/rules/react"
+		"./rules/react.js"
 	],
 	"rules": {
 		"complexity": [ 0, 10 ] // TRIAL
