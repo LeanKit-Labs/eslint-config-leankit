@@ -6,6 +6,7 @@ module.exports = {
 		"no-catch-shadow": 2, // disallow the catch clause parameter name being the same as a variable in the outer scope
 		"no-delete-var": 2, // disallow deletion of variables
 		"no-label-var": 2, // disallow labels that share a name with a variable
+		"no-restricted-globals": 0, // disallow specified global variables
 		"no-shadow-restricted-names": 2, // disallow shadowing of names such as arguments
 		"no-shadow": 2, // JSHINT disallow declaration of variables already declared in the outer scope
 		"no-undef-init": 2, // disallow use of undefined when initializing variables
