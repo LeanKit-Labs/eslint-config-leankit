@@ -3,7 +3,7 @@ const rules = require( "../react" );
 describe( "React", function() {
 	describe( "Extends", function() {
 		it( "should extend react rules", function() {
-			rules.extends.should.contain( "eslint-config-leankit/rules/react" );
+			rules.extends.should.contain( "./rules/react.js" );
 		} );
 	} );
 

@@ -5,27 +5,27 @@ const environments = [ "browser", "node", "commonjs" ];
 describe( "Index", function() {
 	describe( "Rules", function() {
 		it( "should extend best-practices rules", function() {
-			rules.extends.should.contain( "eslint-config-leankit/rules/best-practices" );
+			rules.extends.should.contain( "./rules/best-practices.js" );
 		} );
 
 		it( "should extend possible-errors rules", function() {
-			rules.extends.should.contain( "eslint-config-leankit/rules/possible-errors" );
+			rules.extends.should.contain( "./rules/possible-errors.js" );
 		} );
 
 		it( "should extend nodejs-and-commonjs rules", function() {
-			rules.extends.should.contain( "eslint-config-leankit/rules/nodejs-and-commonjs" );
+			rules.extends.should.contain( "./rules/nodejs-and-commonjs.js" );
 		} );
 
 		it( "should extend strict rules", function() {
-			rules.extends.should.contain( "eslint-config-leankit/rules/strict-mode" );
+			rules.extends.should.contain( "./rules/strict-mode.js" );
 		} );
 
 		it( "should extend stylistic-issues rules", function() {
-			rules.extends.should.contain( "eslint-config-leankit/rules/stylistic-issues" );
+			rules.extends.should.contain( "./rules/stylistic-issues.js" );
 		} );
 
 		it( "should extend variables rules", function() {
-			rules.extends.should.contain( "eslint-config-leankit/rules/variables" );
+			rules.extends.should.contain( "./rules/variables.js" );
 		} );
 	} );
 

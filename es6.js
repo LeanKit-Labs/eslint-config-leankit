@@ -1,6 +1,6 @@
 module.exports = {
 	"extends": [
-		"eslint-config-leankit/rules/ecmascript6"
+		"./rules/ecmascript6.js"
 	],
 	"rules": {
 		"vars-on-top": 2

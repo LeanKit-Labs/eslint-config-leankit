@@ -1,5 +1,5 @@
 module.exports = {
 	"extends": [
-		"eslint-config-leankit/rules/a11y"
+		"./rules/a11y.js"
 	]
 };
