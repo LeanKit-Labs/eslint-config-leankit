@@ -1,3 +1,11 @@
+## 3.x
+
+### 3.0.0
+
+* Updated to latest version of eslint
+* General update to rules
+* Update react rules and add a11y rules
+
 ## 2.x
 
 ### 2.0.0
