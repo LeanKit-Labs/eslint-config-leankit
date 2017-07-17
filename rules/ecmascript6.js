@@ -4,31 +4,33 @@ module.exports = {
 	"env": {
 		"es6": true
 	},
-	"ecmaFeatures": {
-		"arrowFunctions": true, // enable arrow functions
-		"binaryLiterals": true, // enable binary literals
-		"blockBindings": true, // enable let and const
-		"classes": true, // enable classes
-		"defaultParams": true, // enable default function parameters
-		"destructuring": true, // enable destructuring
-		"forOf": true, // enable for-of loops
-		"generators": true, // enable generators
-		"modules": true, // enable modules and global strict mode
-		"objectLiteralComputedProperties": true, // enable computed object literal property names
-		"objectLiteralDuplicateProperties": true, // enable duplicate object literal properties in strict mode
-		"objectLiteralShorthandMethods": true, // enable object literal shorthand methods
-		"objectLiteralShorthandProperties": true, // enable object literal shorthand properties
-		"octalLiterals": false, // enable octal literals
-		"regexUFlag": true, // enable the regular expression u flag
-		"regexYFlag": true, // enable the regular expression y flag
-		"restParams": true, // enable the rest parameters
-		"spread": true, // enable the spread operator for arrays
-		"superInFunctions": true, // enable super references inside of functions
-		"templateStrings": true, // enable template strings
-		"unicodeCodePointEscapes": true, // enable code point escapes
-		"globalReturn": false, // allow return statements in the global scope
-		"jsx": true, // enable JSX
-		"experimentalObjectRestSpread": true // enable support for the experimental object rest/spread properties
+	"parserOptions": {
+		"ecmaFeatures": {
+			"arrowFunctions": true, // enable arrow functions
+			"binaryLiterals": true, // enable binary literals
+			"blockBindings": true, // enable let and const
+			"classes": true, // enable classes
+			"defaultParams": true, // enable default function parameters
+			"destructuring": true, // enable destructuring
+			"forOf": true, // enable for-of loops
+			"generators": true, // enable generators
+			"modules": true, // enable modules and global strict mode
+			"objectLiteralComputedProperties": true, // enable computed object literal property names
+			"objectLiteralDuplicateProperties": true, // enable duplicate object literal properties in strict mode
+			"objectLiteralShorthandMethods": true, // enable object literal shorthand methods
+			"objectLiteralShorthandProperties": true, // enable object literal shorthand properties
+			"octalLiterals": false, // enable octal literals
+			"regexUFlag": true, // enable the regular expression u flag
+			"regexYFlag": true, // enable the regular expression y flag
+			"restParams": true, // enable the rest parameters
+			"spread": true, // enable the spread operator for arrays
+			"superInFunctions": true, // enable super references inside of functions
+			"templateStrings": true, // enable template strings
+			"unicodeCodePointEscapes": true, // enable code point escapes
+			"globalReturn": false, // allow return statements in the global scope
+			"jsx": true, // enable JSX
+			"experimentalObjectRestSpread": true // enable support for the experimental object rest/spread properties
+		}
 	},
 	"rules": {
 		"arrow-body-style": [ 0, "as-needed" ], // TRIAL require braces in arrow function body
