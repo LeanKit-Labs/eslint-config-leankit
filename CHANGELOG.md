@@ -1,3 +1,9 @@
+## 4.x
+
+### 4.0.0
+
+* Updated to eslint 4 Also updated all dependencies to latest versions.
+
 ## 3.x
 
 ### 3.0.0
