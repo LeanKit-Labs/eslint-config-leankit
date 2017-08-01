@@ -2,6 +2,6 @@
 
 module.exports = {
 	"rules": {
-		"strict": [ 2, "never" ] // controls location of Use Strict Directives
+		"strict": [ "error", "never" ] // controls location of Use Strict Directives
 	}
 };
