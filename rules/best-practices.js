@@ -11,7 +11,7 @@ module.exports = {
 		"curly": [ "error", "all" ], // JSCS specify curly brace conventions for all control statements
 		"default-case": "error", // require default case in switch statements
 		"dot-location": [ "error", "property" ], // enforces consistent newlines before or after dots
-		"dot-notation": "error", // JSCS encourages use of dot notation whenever possible
+		"dot-notation": [ "error", { "allowPattern": "^[a-z]+(_[a-z]+)+$" } ], // JSCS encourages use of dot notation whenever possible
 		"eqeqeq": [ "error", "smart" ], // JSHINT require the use of === and !== (fixable)
 		"guard-for-in": "error", // JSHINT make sure for-in loops have an if statement
 		"no-alert": "error", // disallow the use of alert, confirm, and prompt

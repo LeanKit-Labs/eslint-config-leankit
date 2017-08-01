@@ -4,7 +4,7 @@ module.exports = {
 	"rules": {
 		"array-bracket-spacing": [ "error", "always" ], // JSCS enforce spacing inside array brackets (fixable)
 		"block-spacing": [ "error", "always" ], // disallow or enforce spaces inside of single line blocks (fixable)
-		"brace-style": [ "error", "1tbs" ], // JSCS enforce one true brace style
+		"brace-style": [ "error", "1tbs", { allowSingleLine: true } ], // JSCS enforce one true brace style
 		"camelcase": [ "error", { "properties": "always" } ], // JSCS require camel case names
 		"comma-dangle": [ "error", "never" ], // JSCS disallow or enforce trailing commas
 		"comma-spacing": [ "error", { "before": false, "after": true } ], // enforce spacing before and after comma (fixable)
@@ -75,17 +75,17 @@ module.exports = {
 		"operator-linebreak": [ "error", "after", { "overrides": { "?": "after", ":": "after" } } ], // JSCS enforce operators to be placed before or after line breaks
 		"padded-blocks": [ "error", "never" ], // JSCS enforce padding within blocks
 		"quote-props": [ "error", "as-needed", { "keywords": false } ], // JSCS require quotes around object literal property names
-		"quotes": [ "error", "double", "avoid-escape" ], // JSCS specify whether backticks, double or single quotes should be used (fixable)
+		"quotes": [ "error", "double", { avoidEscape: true } ], // JSCS specify whether backticks, double or single quotes should be used (fixable)
 		"require-jsdoc": [ "off" ], // Require JSDoc comment
 		"semi-spacing": [ "error", { "before": false, "after": true } ], // enforce spacing before and after semicolons
 		"semi": [ "error", "always" ], // JSCS require or disallow use of semicolons instead of ASI (fixable)
 		"sort-keys": "off", // requires object keys to be sorted
 		"sort-vars": "off", // sort variables within the same declaration block
 		"space-before-blocks": [ "error", "always" ], // JSCS require or disallow a space before blocks (fixable)
-		"space-before-function-paren": [ "error", "never" ], // JSCS require or disallow a space before function opening parenthesis (fixable)
+		"space-before-function-paren": [ "error", { "anonymous": "ignore", "named": "never" } ], // JSCS require or disallow a space before function opening parenthesis (fixable)
 		"space-in-parens": [ "error", "always" ], // JSCS require or disallow spaces inside parentheses
 		"space-infix-ops": "error", // JSCS require spaces around operators (fixable)
-		"space-unary-ops": "error", // JSCS require or disallow spaces before/after unary operators (fixable)
+		"space-unary-ops": [ "error", { "words": false, "nonwords": false } ], // JSCS require or disallow spaces before/after unary operators (fixable)
 		"spaced-comment": [ "error", "always" ], // require or disallow a space immediately following the // or /* in a comment
 		"unicode-bom": "off", // require or disallow Unicode byte order mark (BOM)
 		"wrap-regex": "off" // require regex literals to be wrapped in parentheses
