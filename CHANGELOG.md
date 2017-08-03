@@ -1,5 +1,10 @@
 ## 4.x
 
+### 4.1.0
+
+* Updated rules to match our JSCS settings
+* Updated to use new string-based rule setting syntax. Converted 0, 1 and 2 to "off", "warn" and "error" respectively.
+
 ### 4.0.0
 
 * Updated to eslint 4 Also updated all dependencies to latest versions.
