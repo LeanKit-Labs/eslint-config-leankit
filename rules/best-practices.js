@@ -2,72 +2,72 @@
 
 module.exports = {
 	"rules": {
-		"accessor-pairs": [ 2, { "setWithoutGet": true } ], // enforces getter/setter pairs in objects
-		"array-callback-return": 2, // enforce return statements in callbacks of array methods
-		"block-scoped-var": 2, // JSHINT treat var statements as if they were block scoped
-		"class-methods-use-this": 0, // enforce that class methods utilize this
-		"complexity": [ 0, 5 ], // TRIAL specify the maximum cyclomatic complexity allowed in a program
-		"consistent-return": 2, // require return statements to either always or never specify values
-		"curly": [ 2, "all" ], // JSCS specify curly brace conventions for all control statements
-		"default-case": 2, // require default case in switch statements
-		"dot-location": [ 2, "property" ], // enforces consistent newlines before or after dots
-		"dot-notation": 2, // JSCS encourages use of dot notation whenever possible
-		"eqeqeq": [ 2, "smart" ], // JSHINT require the use of === and !== (fixable)
-		"guard-for-in": 2, // JSHINT make sure for-in loops have an if statement
-		"no-alert": 2, // disallow the use of alert, confirm, and prompt
-		"no-caller": 2, // JSHINT disallow use of arguments.caller or arguments.callee
-		"no-case-declarations": 2, // disallow lexical declarations in case clauses
-		"no-div-regex": 2, // disallow division operators explicitly at beginning of regular expression
-		"no-else-return": 2, // disallow else after a return in an if
-		"no-empty-function": 0, // disallow empty functions
-		"no-empty-pattern": 2, // disallow use of empty destructuring patterns
-		"no-eq-null": 0, // JSHINT disallow comparisons to null without a type-checking operator
-		"no-eval": 2, // JSHINT disallow use of eval()
-		"no-extend-native": 2, // disallow adding to native types
-		"no-extra-bind": 2, // disallow unnecessary function binding
-		"no-extra-label": 2, // disallow unnecessary labels
-		"no-fallthrough": 2, // disallow fallthrough of case statements
-		"no-floating-decimal": 2, // disallow the use of leading or trailing decimal points in numeric literals
-		"no-global-assign": 2, // disallow assignments to native objects or read-only global variables
-		"no-implicit-coercion": 0, // disallow the type conversions with shorter notations
-		"no-implicit-globals": 0, // disallow var and named function declarations in the global scope
-		"no-implied-eval": 2, // disallow use of eval()-like methods
-		"no-invalid-this": 2, // JSHINT disallow this keywords outside of classes or class-like objects
-		"no-iterator": 2, // JSHINT disallow usage of __iterator__ property
-		"no-labels": 2, // disallow use of labeled statements
-		"no-lone-blocks": 2, // disallow unnecessary nested blocks
-		"no-loop-func": 2, // JSHINT disallow creation of functions within loops
+		"accessor-pairs": [ "error", { "setWithoutGet": true } ], // enforces getter/setter pairs in objects
+		"array-callback-return": "error", // enforce return statements in callbacks of array methods
+		"block-scoped-var": "error", // JSHINT treat var statements as if they were block scoped
+		"class-methods-use-this": "off", // enforce that class methods utilize this
+		"complexity": [ "off", 5 ], // TRIAL specify the maximum cyclomatic complexity allowed in a program
+		"consistent-return": "error", // require return statements to either always or never specify values
+		"curly": [ "error", "all" ], // JSCS specify curly brace conventions for all control statements
+		"default-case": "error", // require default case in switch statements
+		"dot-location": [ "error", "property" ], // enforces consistent newlines before or after dots
+		"dot-notation": [ "error", { "allowPattern": "^[a-z]+(_[a-z]+)+$" } ], // JSCS encourages use of dot notation whenever possible
+		"eqeqeq": [ "error", "smart" ], // JSHINT require the use of === and !== (fixable)
+		"guard-for-in": "error", // JSHINT make sure for-in loops have an if statement
+		"no-alert": "error", // disallow the use of alert, confirm, and prompt
+		"no-caller": "error", // JSHINT disallow use of arguments.caller or arguments.callee
+		"no-case-declarations": "error", // disallow lexical declarations in case clauses
+		"no-div-regex": "error", // disallow division operators explicitly at beginning of regular expression
+		"no-else-return": "error", // disallow else after a return in an if
+		"no-empty-function": "off", // disallow empty functions
+		"no-empty-pattern": "error", // disallow use of empty destructuring patterns
+		"no-eq-null": "off", // JSHINT disallow comparisons to null without a type-checking operator
+		"no-eval": "error", // JSHINT disallow use of eval()
+		"no-extend-native": "error", // disallow adding to native types
+		"no-extra-bind": "error", // disallow unnecessary function binding
+		"no-extra-label": "error", // disallow unnecessary labels
+		"no-fallthrough": "error", // disallow fallthrough of case statements
+		"no-floating-decimal": "error", // disallow the use of leading or trailing decimal points in numeric literals
+		"no-global-assign": "error", // disallow assignments to native objects or read-only global variables
+		"no-implicit-coercion": "off", // disallow the type conversions with shorter notations
+		"no-implicit-globals": "off", // disallow var and named function declarations in the global scope
+		"no-implied-eval": "error", // disallow use of eval()-like methods
+		"no-invalid-this": "error", // JSHINT disallow this keywords outside of classes or class-like objects
+		"no-iterator": "error", // JSHINT disallow usage of __iterator__ property
+		"no-labels": "error", // disallow use of labeled statements
+		"no-lone-blocks": "error", // disallow unnecessary nested blocks
+		"no-loop-func": "error", // JSHINT disallow creation of functions within loops
 		"no-magic-numbers": [ "error", {
 			"ignore": [ -1, 0, 1 ] // disallow the use of magic numbers except common incrementers / indexes
 		} ],
-		"no-multi-spaces": 2, // JSCS disallow use of multiple spaces (fixable)
-		"no-multi-str": 2, // JSCS disallow use of multiline strings
-		"no-new-func": 2, // JSHINT disallow use of new operator for Function object
-		"no-new-wrappers": 2, // JSHINT disallows creating new instances of String,Number, and Boolean
-		"no-new": 2, // JSHINT disallow use of the new operator when not part of an assignment or comparison
-		"no-octal-escape": 2, // disallow use of octal escape sequences in string literals, such as var foo = "Copyright \251";
-		"no-octal": 2, // disallow use of octal literals
-		"no-param-reassign": [ 0, { "props": false } ], // TRIAL disallow reassignment of function parameters
-		"no-proto": 2, // JSHINT disallow usage of __proto__ property
-		"no-redeclare": 2, // disallow declaring the same variable more than once
-		"no-return-assign": 2, // disallow use of assignment in return statement
-		"no-script-url": 2, // JSHINT disallow use of javascript: urls.
-		"no-self-assign": 2, // disallow assignments where both sides are exactly the same
-		"no-self-compare": 2, // disallow comparisons where both sides are exactly the same
-		"no-sequences": 2, // disallow use of the comma operator
-		"no-throw-literal": 2, // restrict what can be thrown as an exception
-		"no-unmodified-loop-condition": 2, // disallow unmodified loop conditions
-		"no-unused-expressions": 2, // JSHINT disallow usage of expressions in statement position
-		"no-unused-labels": 2, // disallow unused labels
-		"no-useless-call": 2, // disallow unnecessary .call() and .apply()
-		"no-useless-concat": 2, // disallow unnecessary concatenation of literals or template literals
-		"no-useless-escape": 2, // disallow unnecessary escape characters
-		"no-void": 2, // disallow use of the void operator
-		"no-warning-comments": [ 0, { "terms": [ "todo", "fixme", "xxx" ], "location": "start" } ], // disallow usage of configurable warning terms in comments - e.g. TODO or FIXME
-		"no-with": 2, // JSCS disallow use of the with statement
-		"radix": 2, // require use of the second argument for parseInt()
-		"vars-on-top": 0, // require declaration of all vars at the top of their containing scope
-		"wrap-iife": 2, // JSCS require immediate function invocation to be wrapped in parentheses
-		"yoda": 2 // require or disallow Yoda conditions
+		"no-multi-spaces": "error", // JSCS disallow use of multiple spaces (fixable)
+		"no-multi-str": "error", // JSCS disallow use of multiline strings
+		"no-new-func": "error", // JSHINT disallow use of new operator for Function object
+		"no-new-wrappers": "error", // JSHINT disallows creating new instances of String,Number, and Boolean
+		"no-new": "error", // JSHINT disallow use of the new operator when not part of an assignment or comparison
+		"no-octal-escape": "error", // disallow use of octal escape sequences in string literals, such as var foo = "Copyright \251";
+		"no-octal": "error", // disallow use of octal literals
+		"no-param-reassign": [ "off", { "props": false } ], // TRIAL disallow reassignment of function parameters
+		"no-proto": "error", // JSHINT disallow usage of __proto__ property
+		"no-redeclare": "error", // disallow declaring the same variable more than once
+		"no-return-assign": "error", // disallow use of assignment in return statement
+		"no-script-url": "error", // JSHINT disallow use of javascript: urls.
+		"no-self-assign": "error", // disallow assignments where both sides are exactly the same
+		"no-self-compare": "error", // disallow comparisons where both sides are exactly the same
+		"no-sequences": "error", // disallow use of the comma operator
+		"no-throw-literal": "error", // restrict what can be thrown as an exception
+		"no-unmodified-loop-condition": "error", // disallow unmodified loop conditions
+		"no-unused-expressions": "error", // JSHINT disallow usage of expressions in statement position
+		"no-unused-labels": "error", // disallow unused labels
+		"no-useless-call": "error", // disallow unnecessary .call() and .apply()
+		"no-useless-concat": "error", // disallow unnecessary concatenation of literals or template literals
+		"no-useless-escape": "error", // disallow unnecessary escape characters
+		"no-void": "error", // disallow use of the void operator
+		"no-warning-comments": [ "off", { "terms": [ "todo", "fixme", "xxx" ], "location": "start" } ], // disallow usage of configurable warning terms in comments - e.g. TODO or FIXME
+		"no-with": "error", // JSCS disallow use of the with statement
+		"radix": "error", // require use of the second argument for parseInt()
+		"vars-on-top": "off", // require declaration of all vars at the top of their containing scope
+		"wrap-iife": "error", // JSCS require immediate function invocation to be wrapped in parentheses
+		"yoda": "error" // require or disallow Yoda conditions
 	}
 };
