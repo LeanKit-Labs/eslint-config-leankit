@@ -12,7 +12,7 @@ module.exports = {
 		"no-undef-init": "error", // disallow use of undefined when initializing variables
 		"no-undef": "error", // JSHINT disallow use of undeclared variables unless mentioned in a /*global */ block
 		"no-undefined": "off", // disallow use of undefined variable
-		"no-unused-vars": [ "error", { "vars": "all", "args": "none" } ], // JSHINT disallow declaration of variables that are not used in the code
+		"no-unused-vars": [ "error", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false, "argsIgnorePattern": "^_" } ], // JSHINT disallow declaration of variables that are not used in the code
 		"no-use-before-define": [ "error", "nofunc" ] // JSHINT disallow use of variables before they are defined
 	}
 };
