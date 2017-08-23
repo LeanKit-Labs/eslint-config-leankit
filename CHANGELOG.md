@@ -1,5 +1,9 @@
 ## 4.x
 
+### 4.1.1
+
+* Add linting of unused arguments
+
 ### 4.1.0
 
 * Updated rules to match our JSCS settings
