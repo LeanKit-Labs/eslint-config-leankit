@@ -58,7 +58,7 @@ module.exports = {
 		"react/jsx-closing-bracket-location": [ "warn", { "location": "after-props" } ], // Validate closing bracket location in JSX
 		"react/jsx-curly-spacing": [ "error", "always" ], // Enforce or disallow spaces inside of curly braces in JSX attributes
 		"react/jsx-equals-spacing": [ "error", "never" ], // Enforce or disallow spaces around equal signs in JSX attributes (fixable)
-		"react/jsx-filename-extension": "off", // Restrict file extensions that may contain JSX
+		"react/jsx-filename-extension": [ "error", { "extensions": [ ".js" ] } ], // Restrict file extensions that may contain JSX
 		"react/jsx-first-prop-new-line": "off", // Enforce position of the first prop in JSX
 		"react/jsx-handler-names": [ "off", { "eventHandlerPrefix": "handle", "eventHandlerPropPrefix": "on" } ], // Enforce event handler naming conventions in JSX
 		"react/jsx-indent": [ "error", "tab" ], // Validate JSX indentation
