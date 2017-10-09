@@ -1,5 +1,9 @@
 ## 4.x
 
+### 4.3.0
+
+* Added rule to enforce js extension for react components
+
 ### 4.2.0
 
 * Moved overrides from consuming repos into this project
