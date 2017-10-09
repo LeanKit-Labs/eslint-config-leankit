@@ -2,6 +2,7 @@
 
 module.exports = {
 	"rules": {
+		"no-await-in-loop": "error", // disallow await inside of loops
 		"no-cond-assign": [ "error", "always" ], // JSHINT disallow assignment in conditional expressions
 		"no-console": "warn", // disallow use of console in the node environment
 		"no-constant-condition": "error", // disallow use of constant expressions in conditions

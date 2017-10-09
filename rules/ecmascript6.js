@@ -39,7 +39,7 @@ module.exports = {
 		"constructor-super": "error", // verify calls of super() in constructors
 		"generator-star-spacing": [ "error", { "before": true, "after": false } ], // enforce spacing around the * in generator functions (fixable)
 		"no-class-assign": "error", // disallow modifying variables of class declarations
-		"no-confusing-arrow": "error", // disallow arrow functions where they could be confused with comparisons
+		"no-confusing-arrow": "off", // disallow arrow functions where they could be confused with comparisons
 		"no-const-assign": "error", // disallow modifying variables that are declared using const
 		"no-dupe-class-members": "error", // disallow duplicate name in class members
 		"no-duplicate-imports": "error", // disallow duplicate module imports
@@ -51,7 +51,7 @@ module.exports = {
 		"no-useless-rename": "error", // disallow renaming import, export, and destructured assignments to the same name
 		"no-var": "error", // require let or const instead of var
 		"object-shorthand": [ "error", "always" ], // require method and property shorthand syntax for object literals
-		"prefer-arrow-callback": "error", // suggest using arrow functions as callbacks
+		"prefer-arrow-callback": "off", // suggest using arrow functions as callbacks
 		"prefer-const": "error", // suggest using const declaration for variables that are never modified after declared
 		"prefer-numeric-literals": "off", // disallow parseInt() in favor of binary, octal, and hexadecimal literals
 		"prefer-reflect": "off", // suggest using Reflect methods where applicable

@@ -3,6 +3,6 @@ module.exports = {
 		"./rules/ecmascript6.js"
 	],
 	"rules": {
-		"vars-on-top": 2
+		"vars-on-top": "error"
 	}
 };
