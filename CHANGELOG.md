@@ -1,5 +1,9 @@
 ## 4.x
 
+### 4.2.0
+
+* Moved overrides from consuming repos into this project
+
 ### 4.1.1
 
 * Add linting of unused arguments
