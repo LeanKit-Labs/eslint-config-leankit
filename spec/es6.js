@@ -9,7 +9,7 @@ describe( "ES6", function() {
 
 	describe( "Rules", function() {
 		it( "should override vars-on-top", function() {
-			rules.rules[ "vars-on-top" ].should.equal( 2 );
+			rules.rules[ "vars-on-top" ].should.equal( "error" );
 		} );
 	} );
 } );

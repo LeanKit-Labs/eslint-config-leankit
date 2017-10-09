@@ -1,6 +1,6 @@
 const should = require( "chai" ).should(); // eslint-disable-line no-unused-vars
 const rules = require( "../test" );
-const IGNORED_RULES = [ "no-unused-expressions", "no-magic-numbers", "react/prop-types", "react/display-name", "react/no-multi-comp", "init-declarations" ];
+const IGNORED_RULES = [ "no-unused-expressions", "no-magic-numbers", "init-declarations", "react/prop-types", "react/display-name", "react/no-multi-comp", "react/prefer-stateless-function" ];
 
 describe( "Test", function() {
 	describe( "Environment", function() {
@@ -11,12 +11,22 @@ describe( "Test", function() {
 
 	describe( "Rules", function() {
 		it( "should override max-nested-callbacks", function() {
-			rules.rules[ "max-nested-callbacks" ].should.eql( [ 2, 15 ] );
+			rules.rules[ "max-nested-callbacks" ].should.eql( [ "error", 15 ] );
 		} );
 
-		it( "should ignore rules", function() {
+		it( "should override max-lines", function() {
+			rules.rules[ "max-lines" ].should.eql( [ "error", { "max": 2500 } ] );
+		} );
+
+		it( "should override max-statements", function() {
+			rules.rules[ "max-statements" ].should.eql( [ "error", { "max": 1000 } ] );
+		} );
+
+		describe( "Ignore", function() {
 			IGNORED_RULES.forEach( function( rule ) {
-				rules.rules[ rule ].should.equal( 0 );
+				it( `should ignore ${ rule }`, () => {
+					rules.rules[ rule ].should.equal( "off" );
+				} );
 			} );
 		} );
 	} );

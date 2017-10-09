@@ -3,7 +3,7 @@
 module.exports = {
 	"rules": {
 		"callback-return": "error", // enforce return after a callback
-		"global-require": "error", // enforce require() on top-level module scope
+		"global-require": "off", // enforce require() on top-level module scope
 		"handle-callback-err": "off", // enforce require() on top-level module scope
 		"no-mixed-requires": [ "error", { "grouping": true } ], //  enforce error handling in callbacks
 		"no-new-require": "error", //  disallow mixing regular variable and require declarations

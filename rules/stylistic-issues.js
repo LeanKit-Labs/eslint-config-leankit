@@ -36,11 +36,11 @@ module.exports = {
 		"lines-around-directive": "off", // require or disallow newlines around directives
 		"max-depth": [ "error", 5 ], // specify the maximum depth that blocks can be nested
 		"max-len": "off", // specify the maximum length of a line in your program
-		"max-lines": [ "error", 100 ], // enforce a maximum number of lines per file
+		"max-lines": [ "error", { "max": 1000 } ], // enforce a maximum number of lines per file
 		"max-nested-callbacks": [ "error", 3 ], // specify the maximum depth callbacks can be nested
 		"max-params": [ "error", 5 ], // limits the number of parameters that can be used in the function declaration.
 		"max-statements-per-line": [ "error", { "max": 5 } ], // enforce a maximum number of statements allowed per line
-		"max-statements": [ "error", 25 ], // specify the maximum number of statement allowed in a function
+		"max-statements": [ "error", { "max": 25 } ], // specify the maximum number of statement allowed in a function
 		"multiline-ternary": "off", // enforce newlines between operands of ternary expressions
 		"new-cap": "error", // JSCS require a capital letter for constructors
 		"new-parens": "error", // disallow the omission of parentheses when invoking a constructor with no arguments

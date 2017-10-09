@@ -7,7 +7,7 @@ module.exports = {
 		"block-scoped-var": "error", // JSHINT treat var statements as if they were block scoped
 		"class-methods-use-this": "off", // enforce that class methods utilize this
 		"complexity": [ "off", 5 ], // TRIAL specify the maximum cyclomatic complexity allowed in a program
-		"consistent-return": "error", // require return statements to either always or never specify values
+		"consistent-return": "off", // require return statements to either always or never specify values
 		"curly": [ "error", "all" ], // JSCS specify curly brace conventions for all control statements
 		"default-case": "error", // require default case in switch statements
 		"dot-location": [ "error", "property" ], // enforces consistent newlines before or after dots

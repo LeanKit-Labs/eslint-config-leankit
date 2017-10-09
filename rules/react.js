@@ -58,7 +58,7 @@ module.exports = {
 		"react/jsx-closing-bracket-location": [ "warn", { "location": "after-props" } ], // Validate closing bracket location in JSX
 		"react/jsx-curly-spacing": [ "error", "always" ], // Enforce or disallow spaces inside of curly braces in JSX attributes
 		"react/jsx-equals-spacing": [ "error", "never" ], // Enforce or disallow spaces around equal signs in JSX attributes (fixable)
-		"react/jsx-filename-extension": "error", // Restrict file extensions that may contain JSX
+		"react/jsx-filename-extension": "off", // Restrict file extensions that may contain JSX
 		"react/jsx-first-prop-new-line": "off", // Enforce position of the first prop in JSX
 		"react/jsx-handler-names": [ "off", { "eventHandlerPrefix": "handle", "eventHandlerPropPrefix": "on" } ], // Enforce event handler naming conventions in JSX
 		"react/jsx-indent": [ "error", "tab" ], // Validate JSX indentation
@@ -73,7 +73,7 @@ module.exports = {
 		"react/jsx-no-undef": "error", // Disallow undeclared variables in JSX
 		"react/jsx-pascal-case": "off", // Enforce PascalCase for user-defined JSX components
 		"react/jsx-sort-props": "off", // Enforce props alphabetical sorting
-		"react/jsx-space-before-closing": "error", // Validate spacing before closing bracket in JSX (fixable)
+		"react/jsx-tag-spacing": "error", // Validate whitespace in and around the JSX opening and closing brackets (fixable)
 		"react/jsx-uses-react": "error", // Prevent React to be incorrectly marked as unused
 		"react/jsx-uses-vars": "error", // Prevent variables used in JSX to be incorrectly marked as unused
 		"react/jsx-wrap-multilines": "error" // Prevent missing parentheses around multilines JSX
