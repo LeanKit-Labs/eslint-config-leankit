@@ -1,5 +1,9 @@
 ## 4.x
 
+### 4.4.0
+
+* Removed no-unused-expressions override from test.js
+
 ### 4.3.0
 
 * Added rule to enforce js extension for react components
