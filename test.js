@@ -6,7 +6,6 @@ module.exports = {
 		"max-nested-callbacks": [ "error", 15 ],
 		"max-lines": [ "error", { "max": 2500 } ],
 		"max-statements": [ "error", { "max": 1000 } ],
-		"no-unused-expressions": "off",
 		"no-magic-numbers": "off",
 		"init-declarations": "off",
 		"react/prop-types": "off",
