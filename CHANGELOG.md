@@ -1,5 +1,9 @@
 ## 4.x
 
+### 4.5.0
+
+* Changed to use babel's no-invalid-this
+
 ### 4.4.0
 
 * Removed no-unused-expressions override from test.js
