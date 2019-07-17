@@ -74,6 +74,17 @@ You can run tests with `npm test`.
 
 You can make sure this module lints with itself using `npm run lint`.
 
+## Development Tips
+
+Using `npm link ../eslint-config-leankit` or `npm install ../eslint-config-leankit` to test changes locally don't work well with this repo. Instead, use `npm pack` which will create a `tgz` file (example: `eslint-config-leankit-4.5.0.tgz`). From there you can install the packed file into another project (example: `npm i ../eslint-config-leankit/eslint-config-leankit-4.5.0.tgz --no-save`). Once installed you can run linting, but it's recommended to remove ESLint's cache first (example: `rm .eslintcache && npm run lint`) 
+
+```
+eslint-config-leankit > npm pack
+eslint-config-leankit > cd ../other-project
+other-project > npm i ../eslint-config-leankit/eslint-config-leankit-4.5.0.tgz --no-save
+other-project > rm .eslintcache && npm run lint 
+```
+
 ## References
 
 See also [LeanKit's Style Guide](https://github.com/LeanKit-Labs/touchstone/wiki) and

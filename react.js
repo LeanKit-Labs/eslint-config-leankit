@@ -4,5 +4,10 @@ module.exports = {
 	],
 	"rules": {
 		"complexity": [ 0, 10 ] // TRIAL
+	},
+	"settings": {
+		"react": {
+			"version": "16"
+		}
 	}
 };

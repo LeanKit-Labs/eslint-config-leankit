@@ -28,9 +28,9 @@ module.exports = {
 			"templateStrings": true, // enable template strings
 			"unicodeCodePointEscapes": true, // enable code point escapes
 			"globalReturn": false, // allow return statements in the global scope
-			"jsx": true, // enable JSX
-			"experimentalObjectRestSpread": true // enable support for the experimental object rest/spread properties
-		}
+			"jsx": true // enable JSX
+		},
+		"ecmaVersion": "2018"
 	},
 	"rules": {
 		"arrow-body-style": [ "off", "as-needed" ], // TRIAL require braces in arrow function body
