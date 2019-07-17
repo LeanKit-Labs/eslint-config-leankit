@@ -1,5 +1,9 @@
 ## 4.x
 
+### 4.5.1
+
+* Locked down eslint-plugin-react to ~7.12.4
+
 ### 4.5.0
 
 * Changed to use babel's no-invalid-this
