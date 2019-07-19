@@ -1,3 +1,9 @@
+## 5.x
+
+### 5.0.0
+
+* Updated deps & rules that were commonly overridden
+
 ## 4.x
 
 ### 4.5.1
