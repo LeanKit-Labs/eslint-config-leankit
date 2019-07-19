@@ -38,7 +38,7 @@ module.exports = {
 		"no-lone-blocks": "error", // disallow unnecessary nested blocks
 		"no-loop-func": "error", // JSHINT disallow creation of functions within loops
 		"no-magic-numbers": [ "error", {
-			"ignore": [ -1, 0, 1 ] // disallow the use of magic numbers except common incrementers / indexes
+			"ignore": [ -1, -0.5, 0, 0.5, 1, 2, 100 ] // disallow the use of magic numbers except common incrementers / indexes
 		} ],
 		"no-multi-spaces": "error", // JSCS disallow use of multiple spaces (fixable)
 		"no-multi-str": "error", // JSCS disallow use of multiline strings
