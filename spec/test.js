@@ -19,7 +19,7 @@ describe( "Test", function() {
 		} );
 
 		it( "should override max-statements", function() {
-			rules.rules[ "max-statements" ].should.eql( [ "error", { "max": 1000 } ] );
+			rules.rules[ "max-statements" ].should.eql( "off" );
 		} );
 
 		describe( "Ignore", function() {
