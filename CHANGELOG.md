@@ -1,5 +1,9 @@
 ## 5.x
 
+### 5.1.0
+
+* Ignored max-statements for test configuration
+
 ### 5.0.0
 
 * Updated deps & rules that were commonly overridden
