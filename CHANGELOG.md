@@ -1,5 +1,9 @@
 ## 5.x
 
+### 5.2.0
+
+* Added eslint-plugin-react rules to react
+
 ### 5.1.0
 
 * Ignored max-statements for test configuration
