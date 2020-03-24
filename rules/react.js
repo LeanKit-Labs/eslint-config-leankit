@@ -1,7 +1,7 @@
 // eslint-plugin-react https://github.com/yannickcr/eslint-plugin-react
 
 module.exports = {
-	"plugins": [ "react" ],
+	"plugins": [ "react", "react-hooks" ],
 	"rules": {
 		// List of supported rules
 		"react/display-name": "error", // Prevent missing displayName in a React component definition
@@ -76,6 +76,8 @@ module.exports = {
 		"react/jsx-tag-spacing": "error", // Validate whitespace in and around the JSX opening and closing brackets (fixable)
 		"react/jsx-uses-react": "error", // Prevent React to be incorrectly marked as unused
 		"react/jsx-uses-vars": "error", // Prevent variables used in JSX to be incorrectly marked as unused
-		"react/jsx-wrap-multilines": "error" // Prevent missing parentheses around multilines JSX
+		"react/jsx-wrap-multilines": "error", // Prevent missing parentheses around multilines JSX
+		"react-hooks/rules-of-hooks": "error",
+		"react-hooks/exhaustive-deps": "warn"
 	}
 };
