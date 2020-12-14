@@ -1,8 +1,8 @@
 module.exports = {
-	"parser": "babel-eslint",
-	"plugins": [ "babel" ],
+	"parser": "@babel/eslint-parser",
+	"plugins": [ "@babel" ],
 	"rules": {
 		"no-invalid-this": "off",
-		"babel/no-invalid-this": "error"
+		"@babel/no-invalid-this": "error"
 	}
 };
