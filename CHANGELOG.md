@@ -1,3 +1,10 @@
+## 6.x
+
+### 6.0.0
+
+* Upgrade eslint and other deps
+* Breaking Change: Upgraded to babel 7
+
 ## 5.x
 
 ### 5.2.0
