@@ -1,5 +1,9 @@
 ## 6.x
 
+### 6.1.0
+
+* Updated deps
+
 ### 6.0.0
 
 * Upgrade eslint and other deps
