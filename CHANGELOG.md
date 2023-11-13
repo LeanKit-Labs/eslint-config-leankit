@@ -1,3 +1,12 @@
+## 7.x
+
+### 7.0.0
+
+* Removed the babel.js file
+* Remove unused husky dep
+* Updated eslint plugins and husky
+* Upgraded ESLint to 8.53 and removed babel
+
 ## 6.x
 
 ### 6.1.0

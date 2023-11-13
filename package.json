@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-leankit",
-  "version": "6.1.0",
+  "version": "7.0.0",
   "description": "ESLint rules for LeanKit",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
