@@ -1,8 +1,10 @@
-module.exports = {
-	"extends": [
-		"./rules/ecmascript6.js"
-	],
-	"rules": {
-		"vars-on-top": "error"
+import ecmascript6 from "./rules/ecmascript6.js";
+
+export default [
+	...ecmascript6,
+	{
+		rules: {
+			"vars-on-top": "error"
+		}
 	}
-};
+];
