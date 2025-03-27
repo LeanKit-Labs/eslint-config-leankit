@@ -8,7 +8,8 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "mocha spec/*.js",
+    "test": "npm run lint && mocha spec/*.js",
+    "test:only": "NODE_ENV=test mocha -R progress 'spec/**/*.spec.js'",
     "watch:test": "mocha -w spec/*.js",
     "lint": "eslint . --fix",
     "find-new-rules": "eslint-find-rules --unused ./all.js",
