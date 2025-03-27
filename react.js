@@ -1,13 +1,16 @@
-module.exports = {
-	"extends": [
-		"./rules/react.js"
-	],
-	"rules": {
-		"complexity": [ 0, 10 ] // TRIAL
-	},
-	"settings": {
-		"react": {
-			"version": "16"
+import reactRules from "./rules/react.js";
+
+export default [
+	...reactRules,
+	{
+		rules: {
+			// TRIAL: the complexity rule is turned off
+			"complexity": "off"
+		},
+		settings: {
+			react: {
+				version: "18"
+			}
 		}
 	}
-};
+];
