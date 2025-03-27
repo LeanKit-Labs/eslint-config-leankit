@@ -158,6 +158,13 @@ other-project > npm i ../eslint-config-leankit/eslint-config-leankit-4.5.0.tgz -
 other-project > rm .eslintcache && npm run lint
 ```
 
+## Migration Notes
+
+ESLint 9 introduces a new flat configuration system which replaces the legacy `.eslintrc` and similar files. Here are some key points:
+- **Configuration File:** Replace your legacy `.eslintrc.json` or `.eslintrc` with an `eslint.config.js` file that uses ES module syntax and exports a flat array of configuration objects.
+- **Ignore Files:** You can no longer use `.eslintignore`. To ignore files now, please see the [official ESLint documentation](https://eslint.org/docs/latest/use/configure/ignore).
+- **Official Guide:** For more details, see the [official ESLint Migration Guide](https://eslint.org/docs/latest/use/configure/migration-guide).
+
 ## References
 
 See also [LeanKit's Style Guide](https://github.com/LeanKit-Labs/touchstone/wiki) and
