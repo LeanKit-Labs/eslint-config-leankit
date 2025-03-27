@@ -6,6 +6,9 @@ This package provides LeanKit's ESLint configuration as an extensible [shared co
 
 ## Usage
 
+> **NOTICE: CommonJS Projects**
+> If your project uses CommonJS, your ESLint config file must use the `.mjs` extension (e.g., `eslint.config.mjs`) for these configurations to work correctly.
+
 We support many ESLint configurations for your usage.
 
 All the below examples assume that you'll be including the base "eslint-config-leankit" configuration, but you are free to not include that if you wish.
@@ -95,6 +98,31 @@ This configuration enforces a strict set of JSDoc rules to ensure your code is t
 ```
 .
 └── eslint.config.js // with export default [base, es6];
+```
+```
+import { defineConfig } from "eslint/config";
+import js from "@eslint/js";
+import leankit from "eslint-config-leankit";
+import leankitEs6 from "eslint-config-leankit/es6.js";
+
+export default defineConfig( [
+	js.configs.recommended,
+	leankit,
+	leankitEs6,
+	{
+		files: [ "**/*.js", "**/*.cjs", "**/*.mjs" ],
+		ignores: [
+			"node_modules/",
+			".idea/",
+			".DS_Store",
+			"*npm-debug.log",
+			"log/",
+			"coverage/",
+			"*config.json",
+			".nyc_output"
+		]
+	}
+] );
 ```
 
 ### Complex Project with Some of the Rules
